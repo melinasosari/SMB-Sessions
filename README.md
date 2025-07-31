@@ -4,14 +4,22 @@ This Project creates a custom windows firewall rule that allows *outgoing file a
 
 Steps to Create this Rule:                                                
 1.Open Windows Firewall: in run menu type *wf.msc*        
-2.Create a New Outbound Rule:                
-      i.Select *Outbound Rule* then click *New Rule*      
-      ii.Choose *Custom* then click next                                
+2.Create a New Outbound Rule:  
+
+      i.Select *Outbound Rule* then click *New Rule*   
+      
+      ii.Choose *Custom* then click next       
+
+      
       iii.Choose *All Programs* then click next            
-      iv.for *Protocol Type* choose *TCP* and for *Remote Port* select *Specific Ports* then type *445*                  
-      v.under *remote ip address* select *these ip adress*: -add the ip adress of the destination machine (e.g. DC)            
-      vi.Choose *Allow the Connections*                  
-      vii.type a name for example *Allow SMB Sessions to DC*                  
+      iv.for *Protocol Type* choose *TCP* and for *Remote Port* select *Specific Ports* then type *445*   
+      
+      v.under *remote ip address* select *these ip adress*: -add the ip adress of the destination machine (e.g. DC)    
+      
+      vi.Choose *Allow the Connections*           
+      
+      vii.type a name for example *Allow SMB Sessions to DC*
+      
       viii.Finish the rule                  
 
 
